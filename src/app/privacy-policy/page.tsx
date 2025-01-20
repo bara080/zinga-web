@@ -16,12 +16,13 @@ function PrivacyPolicy() {
         <div>
           <h5>Effective Date: 01/01/2025</h5>
           <p>
-            Zinga ("we," "our," "us") is committed to protecting your privacy.
-            This Privacy Policy explains how we collect, use, disclose, and
-            safeguard your information when you use our platform, including our
-            mobile application (the "App") and website (the "Service"). By using
-            Zinga, you agree to the collection and use of information in
-            accordance with this policy.
+            Zinga (&quot;we,&quot; &quot;our,&quot; &quot;us&quot;) is committed
+            to protecting your privacy. This Privacy Policy explains how we
+            collect, use, disclose, and safeguard your information when you use
+            our platform, including our mobile application (the &quot;App&quot;)
+            and website (the &quot;Service&quot;). By using Zinga, you agree to
+            the collection and use of information in accordance with this
+            policy.
           </p>
           <h3>Information We Collect</h3>
           <p>
