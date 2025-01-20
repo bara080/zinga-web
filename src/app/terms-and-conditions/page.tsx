@@ -15,8 +15,9 @@ function TermsConditions() {
       <div>
         <h5>Effective Date: 01/01/2025</h5>
         <p>
-          By using Zinga, you agree to these Terms and Conditions ("Terms"). If
-          you do not agree, please refrain from using the Service.
+          By using Zinga, you agree to these Terms and Conditions
+          (&quot;Terms&quot;). If you do not agree, please refrain from using
+          the Service.
         </p>
         <h3>1. Use of Service</h3>
         <ul>
@@ -62,9 +63,9 @@ function TermsConditions() {
         </p>
         <h3>5. Disclaimer of Warranties</h3>
         <p>
-          The Service is provided "as is" and "as available." We make no
-          warranties regarding the accuracy, reliability, or availability of the
-          Service.
+          The Service is provided &quot;as is&quot; and &quot;as
+          available.&quot; We make no warranties regarding the accuracy,
+          reliability, or availability of the Service.
         </p>
         <h3>6. Limitation of Liability</h3>
         <p>
