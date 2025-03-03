@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function TermsConditions() {
   return (
-    <div className="flex flex-col gap-5">
-      <h1 className="page-title">Terms and Conditions</h1>
+    <div className="max-w-7xl mx-auto flex flex-col gap-5 pb-32">
+      <h1 className="page-title my-32">Terms and Conditions</h1>
       <div>
         <Link href="/" className="inline-flex items-center gap-2">
           <BackArrow />
