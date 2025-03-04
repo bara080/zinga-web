@@ -1,5 +1,10 @@
-import BackArrow from "@/components/icons/BackArrow";
 import Link from "next/link";
+import BackArrow from "@/components/icons/BackArrow";
+
+export const metadata = {
+  title: "Terms and Conditions",
+  description: "Welcome to Zinga App",
+};
 
 function TermsConditions() {
   return (
@@ -12,7 +17,7 @@ function TermsConditions() {
         </Link>
       </div>
 
-      <div>
+      <div className="cms_content">
         <h5>Effective Date: 01/01/2025</h5>
         <p>
           By using Zinga, you agree to these Terms and Conditions

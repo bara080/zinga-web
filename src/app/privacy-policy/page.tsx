@@ -1,5 +1,10 @@
-import BackArrow from "@/components/icons/BackArrow";
 import Link from "next/link";
+import BackArrow from "@/components/icons/BackArrow";
+
+export const metadata = {
+  title: "Privacy Policy",
+  description: "Welcome to Zinga App",
+};
 
 function PrivacyPolicy() {
   return (
@@ -14,7 +19,7 @@ function PrivacyPolicy() {
         </div>
       </div>
 
-      <div>
+      <div className="cms_content">
         <h5>Effective Date: 01/01/2025</h5>
         <p>
           Zinga (&quot;we,&quot; &quot;our,&quot; &quot;us&quot;) is committed
@@ -88,7 +93,7 @@ function PrivacyPolicy() {
           <li>Request deletion of your account and associated data.</li>
           <li>Opt out of promotional communications.</li>
         </ul>
-        <p>
+        <p className="mt-5">
           To exercise these rights, contact us at{" "}
           <a href="mailto:zingapp00@gmail.com">zingapp00@gmail.com</a>.
         </p>

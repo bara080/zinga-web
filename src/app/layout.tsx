@@ -1,21 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
+const urbanist = Urbanist({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Zinga App",
+  title: {
+    default: "Zinga App",
+    template: "%s - Zinga App",
+  },
   description: "Zinga App",
 };
 
@@ -26,11 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="w-full">
-          <main className="w-full flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <body className={`${urbanist.variable} antialiased`}>
+        <div className="w-full h-full flex flex-col">
+          <main className="w-full p-5 flex flex-col gap-8 row-start-2 items-center sm:items-start flex-[1_0_auto]">
             <Header />
             {children}
           </main>
