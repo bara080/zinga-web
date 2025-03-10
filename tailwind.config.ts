@@ -8,9 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        urbanist: ["Urbanist", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: "#FFDF20",
+        secondary: "#18181B",
       },
     },
   },
