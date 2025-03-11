@@ -13,25 +13,34 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full bg-white flex items-center justify-between px-5 border-b relative z-50">
-        {/* Logo */}
-        <Link href="/" className="py-2">
-          <Image src="/logo.svg" alt="Zinga" width={110} height={90} priority />
-        </Link>
+      <header className="w-full bg-zinc-900">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-5 border-b border-zinc-700 relative z-50 h-full">
+          {/* Logo */}
+          <Link href="/" className="pt-5 pb-4">
+            <Image
+              src="/logo.svg"
+              alt="Zinga"
+              width={110}
+              height={90}
+              priority
+              className="invert"
+            />
+          </Link>
 
-        {/* Desktop Navbar */}
-        <div className="hidden md:block h-full">
-          <Navbar />
+          {/* Desktop Navbar */}
+          <div className="hidden md:block h-full">
+            <Navbar />
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="block md:hidden text-white focus:outline-none relative z-40"
+            aria-label="Toggle Menu"
+          >
+            {isOpen ? <X size={32} /> : <Menu size={32} />}
+          </button>
         </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={toggleMenu}
-          className="block md:hidden text-black focus:outline-none relative z-40"
-          aria-label="Toggle Menu"
-        >
-          {isOpen ? <X size={32} /> : <Menu size={32} />}
-        </button>
       </header>
 
       {/* Mobile Menu */}

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import ThemeButton from "../form/Button";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -22,16 +23,21 @@ const Navbar = () => {
             <Link
               href={href}
               className={clsx(
-                "flex sm:inline-flex h-full flex-col text-start sm:items-center justify-center px-2 sm:px-4 py-2 sm:py-0 border-b-2 no-underline font-semibold text-xl transition-all duration-300 hover:text-indigo-600",
+                "flex sm:inline-flex h-full flex-col text-start sm:items-center justify-center px-2 sm:px-4 py-2 sm:py-0 border-b-2 no-underline font-medium text-xl transition-all duration-300 hover:text-indigo-600",
                 pathname === href || (href === "/" && pathname === "/")
-                  ? "text-indigo-600  border-b-indigo-600"
-                  : "border-b-transparent text-black"
+                  ? "text-yellow-300  border-b-yellow-300"
+                  : "border-b-transparent text-white"
               )}
             >
               {label}
             </Link>
           </li>
         ))}
+        <li className="h-full flex flex-col items-center justify-center pb-1">
+          <ThemeButton size="large" variant="primary">
+            Join us
+          </ThemeButton>
+        </li>
       </ul>
     </nav>
   );

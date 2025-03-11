@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${urbanist.variable} antialiased`}>
         <div className="w-full h-full flex flex-col">
-          <main className="w-full p-5 flex flex-col gap-8 row-start-2 items-center sm:items-start flex-[1_0_auto]">
+          <main className="w-full flex flex-col row-start-2 items-center sm:items-start flex-[1_0_auto]">
             <Header />
             {children}
           </main>

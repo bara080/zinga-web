@@ -11,7 +11,6 @@ body {
 body {
   color: #000;
   font-family: "Urbanist", "sans-serif";
-  letter-spacing: 0.5px;
 }
 
 h1.page-title {
@@ -61,4 +60,9 @@ p {
   height: 8px;
   background-color: #6949ff;
   border-radius: 50%;
+}
+
+.review-bg {
+  background: url("./../../public/review-bg.png") no-repeat center top #fff;
+  background-size: cover;
 }

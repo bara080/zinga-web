@@ -1,11 +1,7 @@
+import { CustomIconProps } from "@/lib/types";
 import React from "react";
 
-interface BackArrowProps {
-  size?: number;
-  color?: string;
-}
-
-const BackArrow: React.FC<BackArrowProps> = ({
+const BackArrow: React.FC<CustomIconProps> = ({
   size = 24,
   color = "currentColor",
 }) => {

@@ -11,6 +11,10 @@ export default {
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
       },
+      colors: {
+        brand: "#FFDF20",
+        secondary: "#18181B",
+      },
     },
   },
   plugins: [],
