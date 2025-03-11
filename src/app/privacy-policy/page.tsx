@@ -95,7 +95,7 @@ function PrivacyPolicy() {
         </ul>
         <p className="mt-5">
           To exercise these rights, contact us at{" "}
-          <a href="mailto:zingapp00@gmail.com">zingapp00@gmail.com</a>.
+          <a href="mailto:info@zingaapp.com">info@zingaapp.com</a>.
         </p>
 
         <h3>6. Changes to This Privacy Policy</h3>
