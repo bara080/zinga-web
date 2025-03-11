@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import Navbar from "./Navbar";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import Navbar from "./Navbar";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

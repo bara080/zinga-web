@@ -12,7 +12,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   isCustomer,
 }) => (
   <div
-    className={`border rounded-xl px-8 py-4 gap-4 w-[48%] sm:w-[32%] flex flex-col items-center justify-center ${
+    className={`border rounded-xl px-8 py-4 gap-4 flex flex-col items-center justify-center ${
       isCustomer ? "border-lime-600" : "border-orange-600"
     }`}
   >
