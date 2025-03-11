@@ -92,7 +92,7 @@ function TermsConditions() {
         <p>
           For questions or concerns about these Terms or our Privacy Policy,
           contact us at{" "}
-          <a href="mailto:zingapp00@gmail.com">zingapp00@gmail.com</a>
+          <a href="mailto:info@zingaapp.com">info@zingaapp.com</a>
         </p>
       </div>
     </div>
