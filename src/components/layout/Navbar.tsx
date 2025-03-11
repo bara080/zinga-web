@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import ThemeButton from "../form/Button";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -32,8 +33,10 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
-        <li>
-          <Link href="/">Join us</Link>
+        <li className="h-full flex flex-col items-center justify-center pb-1">
+          <ThemeButton size="large" variant="primary">
+            Join us
+          </ThemeButton>
         </li>
       </ul>
     </nav>

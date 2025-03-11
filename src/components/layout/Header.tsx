@@ -35,7 +35,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="block md:hidden text-black focus:outline-none relative z-40"
+            className="block md:hidden text-white focus:outline-none relative z-40"
             aria-label="Toggle Menu"
           >
             {isOpen ? <X size={32} /> : <Menu size={32} />}
