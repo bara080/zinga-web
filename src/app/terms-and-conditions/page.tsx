@@ -1,5 +1,4 @@
-import Link from "next/link";
-import BackArrow from "@/components/icons/BackArrow";
+import InnerPageLayout from "@/components/ui/InnerPageLayout";
 
 export const metadata = {
   title: "Terms and Conditions",
@@ -8,15 +7,11 @@ export const metadata = {
 
 function TermsConditions() {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col gap-5 pb-32">
-      <h1 className="page-title my-32">Terms and Conditions</h1>
-      <div>
-        <Link href="/" className="inline-flex items-center gap-2">
-          <BackArrow />
-          Back to Home
-        </Link>
-      </div>
-
+    <InnerPageLayout
+      title="Terms and Conditions"
+      description="Review our Terms and Conditions to understand your rights and responsibilities while using Zinga."
+      breadcrumbLabel="Terms and Conditions"
+    >
       <div className="cms_content">
         <h5>Effective Date: 01/01/2025</h5>
         <p>
@@ -91,11 +86,10 @@ function TermsConditions() {
         <h3>9. Contact Us</h3>
         <p>
           For questions or concerns about these Terms or our Privacy Policy,
-          contact us at{" "}
-          <a href="mailto:info@zingaapp.com">info@zingaapp.com</a>
+          contact us at <a href="mailto:info@zingaapp.com">info@zingaapp.com</a>
         </p>
       </div>
-    </div>
+    </InnerPageLayout>
   );
 }
 

@@ -1,4 +1,3 @@
-import ThemeButton from "../form/Button";
 import BenefitCard from "./BenefitCard";
 import Image from "next/image";
 
@@ -32,13 +31,17 @@ const BenefitSection = ({
         />
       </div>
       <div className="w-full sm:w-[70%]">
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           <h2 className="text-2xl sm:text-4xl font-black">{title}</h2>
-          <ThemeButton size="large" variant="primary">
+          <button
+            className={`w-full sm:w-auto text-lg font-semibold  text-white rounded-full px-6 py-2.5 ${
+              isCustomer ? "bg-lime-600" : "bg-orange-600"
+            }`}
+          >
             Join us
-          </ThemeButton>
+          </button>
         </div>
-        <div className="w-full flex flex-wrap gap-4 mt-5">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
           {benefits.map((benefit, index) => (
             <BenefitCard key={index} isCustomer={isCustomer} {...benefit} />
           ))}

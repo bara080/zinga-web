@@ -12,6 +12,8 @@ export { default as PinOutline } from "./PinOutline";
 export { default as ShieldCheckmarkOutline } from "./ShieldCheckmarkOutline";
 export { default as StarHalfSharp } from "./StarHalfSharp";
 export { default as StorefrontOutline } from "./StorefrontOutline";
+export { default as Home } from "./Home";
+export { default as ChevronForward } from "./ChevronForward";
 
 export { default as LogoFacebook } from "./LogoFacebook";
 export { default as LogoTwitter } from "./LogoTwitter";

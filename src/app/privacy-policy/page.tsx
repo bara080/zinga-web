@@ -1,5 +1,4 @@
-import Link from "next/link";
-import BackArrow from "@/components/icons/BackArrow";
+import InnerPageLayout from "@/components/ui/InnerPageLayout";
 
 export const metadata = {
   title: "Privacy Policy",
@@ -8,17 +7,11 @@ export const metadata = {
 
 function PrivacyPolicy() {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col gap-5 pb-32">
-      <div>
-        <h1 className="page-title my-32">Privacy Policy</h1>
-        <div>
-          <Link href="/" className="inline-flex items-center gap-2">
-            <BackArrow />
-            Back to Home
-          </Link>
-        </div>
-      </div>
-
+    <InnerPageLayout
+      title="Privacy Policy"
+      description="We value your privacy. This policy explains how Zinga collects, uses, and protects your personal information."
+      breadcrumbLabel="Privacy Policy"
+    >
       <div className="cms_content">
         <h5>Effective Date: 01/01/2025</h5>
         <p>
@@ -105,7 +98,7 @@ function PrivacyPolicy() {
           effect upon posting.
         </p>
       </div>
-    </div>
+    </InnerPageLayout>
   );
 }
 

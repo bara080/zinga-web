@@ -34,7 +34,7 @@ h5 {
 }
 
 a {
-  color: #6949ff;
+  @apply text-black;
 }
 
 p {
@@ -58,8 +58,12 @@ p {
   top: 12px;
   width: 8px;
   height: 8px;
-  background-color: #6949ff;
   border-radius: 50%;
+  @apply bg-yellow-500;
+}
+
+.cms_content a {
+  @apply underline hover:no-underline;
 }
 
 .review-bg {
