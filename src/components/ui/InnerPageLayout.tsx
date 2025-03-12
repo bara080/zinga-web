@@ -30,7 +30,7 @@ const InnerPageLayout: React.FC<InnerPageLayoutProps> = ({
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-col gap-5 py-24">
+      <div className="max-w-7xl mx-auto flex flex-col gap-5 px-4 py-24">
         {children}
       </div>
     </>
