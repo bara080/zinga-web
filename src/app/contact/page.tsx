@@ -1,3 +1,5 @@
+import InnerPageLayout from "@/components/ui/InnerPageLayout";
+
 export const metadata = {
   title: "Contact",
   description: "Welcome to Zinga App",
@@ -5,9 +7,13 @@ export const metadata = {
 
 function Contact() {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center p-5 text-xl font-semibold">
-      Contact Zinga
-    </div>
+    <InnerPageLayout
+      title="Contact"
+      description="Have questions? Get in touch with us for support, inquiries, or partnerships."
+      breadcrumbLabel="Contact"
+    >
+      <p>Contact Zinga</p>
+    </InnerPageLayout>
   );
 }
 

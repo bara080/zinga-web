@@ -100,15 +100,15 @@ export default function Home() {
   return (
     <>
       <div className="bg-zinc-900 w-full">
-        <div className="max-w-7xl mx-auto flex items-start justify-between px-5 py-10 md:py-20">
+        <div className="max-w-7xl mx-auto flex items-start justify-between px-4 py-10 md:py-20">
           <div className="w-full md:w-[55%] text-zinc-200 flex flex-col gap-3 items-start">
-            <h3 className="bg-brand text-lg text-black inline-block px-5 py-1 rounded-full">
+            <h3 className="bg-brand text-base sm:text-lg text-black inline-block px-3 sm:px-5 py-1 rounded-full">
               Your Services, Your Time — Book Instantly!
             </h3>
-            <h1 className="font-extrabold text-5xl text-white leading-tight">
+            <h1 className="font-extrabold text-4xl sm:text-5xl text-white leading-tight">
               Book Local Services, Anytime, Anywhere with us!
             </h1>
-            <p className="text-2xl">
+            <p className="text-xl sm:text-2xl">
               Browse nearby service providers, compare prices, <br />
               and book your appointment online.
             </p>
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-zinc-100 w-full">
-        <div className="max-w-7xl px-5 mx-auto py-10 md:py-20">
+        <div className="max-w-7xl px-4 mx-auto py-10 md:py-20">
           <div className="w-full md:w-[55%] text-black flex flex-wrap gap-7 items-start">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-7">
               {features.map((feature, index) => (
@@ -141,7 +141,7 @@ export default function Home() {
       </div>
 
       <div className="bg-white py-10 md:py-20 w-full">
-        <div className="max-w-7xl px-5 mx-auto">
+        <div className="max-w-7xl px-4 mx-auto">
           <SectionTitle
             title="Key Features"
             description="Discover how Zinga makes booking and providing services seamless for everyone."
@@ -162,8 +162,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full review-bg pt-20 pb-56">
-        <div className="max-w-7xl px-5 mx-auto">
+      <div className="w-full review-bg pt-14 sm:pt-20 pb-14 sm:pb-56">
+        <div className="max-w-7xl px-4 mx-auto">
           <SectionTitle
             title="What Our Customers Say"
             description="Real experiences from our happy customers — hear how Zinga makes their booking journey smoother."
@@ -179,7 +179,7 @@ export default function Home() {
       </div>
 
       <div className="w-full bg-zinc-900">
-        <div className="max-w-7xl px-5 mx-auto flex flex-col md:flex-row items-center gap-5">
+        <div className="max-w-7xl px-4 mx-auto flex flex-col md:flex-row items-center gap-5 pt-10 md:pt-0">
           <div className="w-full md:w-1/2">
             <SectionTitle
               title="Download Zinga App Now!"
@@ -188,7 +188,7 @@ export default function Home() {
               variant="light"
             />
 
-            <div className="flex flex-row items-center justify-between gap-5">
+            <div className="flex flex-row items-center justify-between gap-5 max-w-[450px]">
               <Link
                 href="https://play.google.com/store/apps?hl=en"
                 target="_blank"
@@ -215,7 +215,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-full md:w-1/2 -mt-36">
+          <div className="w-full md:w-1/2 md:-mt-36">
             <Image
               src="/download-app.png"
               alt="Zinga"

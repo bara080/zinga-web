@@ -35,11 +35,13 @@ const Footer = () => {
         <NewsletterForm />
       </div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="w-full flex flex-col md:flex-row items-start justify-between gap-10 py-10">
           <div className="w-full md:w-[50%] mt-8">
-            <h2 className="text-5xl font-bold text-zinc-200">Zinga App</h2>
-            <div className="mt-5 text-lg text-zinc-400">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-200">
+              Zinga App
+            </h2>
+            <div className="mt-5 text-base sm:text-lg text-zinc-400">
               <span className="font-semibold">Disclaimer:</span> Zinga is an
               online platform connecting customers with local service providers.
               We do not own or operate any services listed on the platform. All
@@ -56,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row items-center justify-between py-10 text-base opacity-70 text-center border-t border-zinc-700">
+        <div className="flex flex-col sm:flex-row items-center justify-between py-10 text-base opacity-70 text-center border-t border-zinc-700 gap-5">
           <div>© 2025 Zingaapp</div>
           <div className="flex flex-row items-center gap-5">
             <Link
