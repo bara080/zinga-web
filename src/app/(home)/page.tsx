@@ -161,7 +161,7 @@ export default function Home() {
       <div className="w-full pt-14 sm:pt-20 pb-14 sm:pb-56">
         <div className="max-w-7xl px-4 mx-auto">
           <SectionTitle
-            title="What Our Customers Say"
+            title="What Our Customers Are Say"
             description="Real experiences from our happy customers — hear how Zinga makes their booking journey smoother."
             align="center"
           />
