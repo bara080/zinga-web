@@ -1,27 +1,27 @@
 import InnerPageLayout from "@/components/ui/InnerPageLayout";
 
 export const metadata = {
-  title: "Partner with Zinga – Grow and Scale Together",
+  title: "Partner with Zinga - Grow and Scale Together",
   description:
-    "Whether you’re an enterprise, affiliate, or influencer—Zinga offers flexible partnership models, co-branded opportunities, and scalable solutions tailored to your goals.",
+    "Whether you&apos;re an enterprise, affiliate, or influencer—Zinga offers flexible partnership models, co-branded opportunities, and scalable solutions tailored to your goals.",
 };
 
 function Partnership() {
   return (
     <InnerPageLayout
-      title="Partner with Zinga – Grow and Scale Together"
-      description="Whether you’re an enterprise, affiliate, or influencer—Zinga offers flexible partnership models, co-branded opportunities, and scalable solutions tailored to your goals."
+      title="Partner with Zinga - Grow and Scale Together"
+      description="Whether you're an enterprise, affiliate, or influencer—Zinga offers flexible partnership models, co-branded opportunities, and scalable solutions tailored to your goals."
       breadcrumbLabel="Partnership"
     >
       <div className="cms_content">
         <p>Designed for Enterprise Clients & High-Value Partnerships</p>
-        <p>Partner with Zinga – Scalable Booking Solutions for Your Business</p>
+        <p>Partner with Zinga - Scalable Booking Solutions for Your Business</p>
 
         <h3>🏢 Tailored Solutions for Service-Based Enterprises</h3>
         <p>
-          Whether you're managing 5 locations or 5,000, Zinga provides flexible,
-          reliable, and white-labeled booking infrastructure to help you scale
-          seamlessly.
+          Whether you&apos;re managing 5 locations or 5,000, Zinga provides
+          flexible, reliable, and white-labeled booking infrastructure to help
+          you scale seamlessly.
         </p>
 
         <h3>Why Choose Zinga?</h3>
