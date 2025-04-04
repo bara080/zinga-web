@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const TestimonialCard = ({
   name,
   role,
@@ -7,7 +9,17 @@ const TestimonialCard = ({
   role: string;
   feedback: string;
 }) => (
-  <div className="bg-white shadow rounded-xl w-full p-6 flex flex-col gap-4">
+  <div className="bg-white border border-zinc-200 rounded-2xl w-full p-6 flex flex-col gap-4 relative">
+    <div className="absolute -bottom-16 w-full h-10 z-0 opacity-50 left-0 right-0">
+      <Image
+        src="/drop-shadow.png"
+        alt={name}
+        width={600}
+        height={34}
+        priority
+        className="max-w-full object-cover"
+      />
+    </div>
     <div className="flex flex-row gap-4">
       <div className="w-16 h-16 rounded-full bg-zinc-200"></div>
       <div className="flex flex-col justify-center">

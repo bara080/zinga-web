@@ -3,7 +3,7 @@
 import Link from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-import ThemeButton from "../form/Button";
+import ThemeOutlineButton from "../form/ThemeOutlineButton";
 
 interface NavbarProps {
   closeMenu?: () => void;
@@ -27,10 +27,10 @@ const Navbar: React.FC<NavbarProps> = ({ closeMenu }) => {
             <Link
               href={href}
               className={clsx(
-                "flex sm:inline-flex h-full flex-col text-start sm:items-center justify-center px-2 sm:px-3 py-2 sm:py-0 border-b sm:border-b-2 no-underline font-medium text-xl transition-all duration-300 hover:text-brand",
+                "flex sm:inline-flex h-full flex-col text-start sm:items-center justify-center px-2 sm:px-3 py-2 sm:py-0 border-b sm:border-b-2 no-underline font-medium text-lg transition-all duration-300 hover:text-white",
                 pathname === href || (href === "/" && pathname === "/")
-                  ? "text-yellow-300  border-b-yellow-300"
-                  : "border-b-transparent text-white"
+                  ? "text-white  border-b-white"
+                  : "border-b-transparent text-white/50"
               )}
               onClick={closeMenu}
             >
@@ -39,13 +39,9 @@ const Navbar: React.FC<NavbarProps> = ({ closeMenu }) => {
           </li>
         ))}
         <li className="h-full flex flex-col items-center justify-center pb-1">
-          <ThemeButton
-            size="large"
-            variant="primary"
-            className="w-full sm:w-auto"
-          >
+          <ThemeOutlineButton variant="white" className="w-full sm:w-auto">
             Join us
-          </ThemeButton>
+          </ThemeOutlineButton>
         </li>
       </ul>
     </nav>

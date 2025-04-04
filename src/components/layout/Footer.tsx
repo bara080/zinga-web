@@ -62,13 +62,13 @@ const Footer = () => {
           <div>© 2025 Zingaapp</div>
           <div className="flex flex-row items-center gap-5">
             <Link
-              className="text-zinc-400 hover:text-brand"
+              className="text-zinc-400 hover:text-white"
               href="/privacy-policy"
             >
               Privacy Policy{" "}
             </Link>
             <Link
-              className="text-zinc-400 hover:text-brand"
+              className="text-zinc-400 hover:text-white"
               href="/terms-and-conditions"
             >
               Terms & Conditions

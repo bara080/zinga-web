@@ -1,19 +1,19 @@
 import React from "react";
 import clsx from "clsx";
 
-interface ThemeButtonProps {
+interface ThemeOutlineButtonProps {
   children: React.ReactNode;
   size?: "small" | "medium" | "large";
-  variant?: "primary" | "secondary" | "dark" | "light" | "default" | "link";
+  variant?: "white" | "black";
   onClick?: () => void;
   className?: string;
   disabled?: boolean;
 }
 
-const ThemeButton: React.FC<ThemeButtonProps> = ({
+const ThemeOutlineButton: React.FC<ThemeOutlineButtonProps> = ({
   children,
   size = "medium",
-  variant = "default",
+  variant = "black",
   onClick,
   className = "",
   disabled = false,
@@ -27,18 +27,15 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({
 
   // Define button color variants
   const variantClasses = {
-    primary: "bg-white/90 text-zinc-900 hover:bg-white active:bg-white/95",
-    secondary: "bg-gray-600 text-white hover:bg-gray-700",
-    dark: "bg-zinc-800 text-white hover:bg-zinc-900",
-    light: "bg-white text-gray-900 border border-gray-300 hover:bg-gray-100",
-    default: "bg-gray-300 text-gray-800 hover:bg-gray-400",
-    link: "bg-transparent text-blue-600 hover:underline",
+    white:
+      "border border-white text-white hover:bg-white/90 hover:text-black active:bg-white",
+    black: "bg-gray-600 text-white hover:bg-gray-700",
   };
 
   return (
     <button
       className={clsx(
-        "rounded-full font-semibold transition duration-200 ease-in-out",
+        "rounded-full font-semibold transition hover:transition-all duration-200 ease-in-out",
         sizeClasses[size],
         variantClasses[variant],
         { "opacity-50 cursor-not-allowed": disabled },
@@ -52,4 +49,4 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({
   );
 };
 
-export default ThemeButton;
+export default ThemeOutlineButton;

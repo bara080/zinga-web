@@ -34,26 +34,22 @@ const features = [
     title: "Easy Registration",
     description:
       "Service providers & customers can sign up in just a few steps.",
-    bgColor: "bg-red-200",
   },
   {
     Icon: NavigateCircleOutline,
     title: "Seamless Navigation",
     description:
       "Easily find and book services in your area with just a few clicks.",
-    bgColor: "bg-yellow-200",
   },
   {
     Icon: ShieldCheckmarkOutline,
     title: "Secure & Trusted",
     description: "We ensure safety and reliability for every transaction.",
-    bgColor: "bg-teal-200",
   },
   {
     Icon: ColorFilterOutline,
     title: "Personalized Services",
     description: "Filter and customize services based on your preferences.",
-    bgColor: "bg-lime-200",
   },
 ];
 
@@ -102,13 +98,13 @@ export default function Home() {
       <div className="bg-zinc-900 w-full">
         <div className="max-w-7xl mx-auto flex items-start justify-between px-4 py-10 md:py-20">
           <div className="w-full md:w-[55%] text-zinc-200 flex flex-col gap-3 items-start">
-            <h3 className="bg-brand text-base sm:text-lg text-black inline-block px-3 sm:px-5 py-1 rounded-full">
+            <h3 className="bg-white text-base sm:text-lg text-black inline-block px-3 sm:px-5 py-1 rounded-full">
               Your Services, Your Time — Book Instantly!
             </h3>
             <h1 className="font-extrabold text-4xl sm:text-5xl text-white leading-tight">
               Book Local Services, Anytime, Anywhere with us!
             </h1>
-            <p className="text-xl sm:text-2xl">
+            <p className="text-xl sm:text-2xl text-white/70">
               Browse nearby service providers, compare prices, <br />
               and book your appointment online.
             </p>
@@ -162,7 +158,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full review-bg pt-14 sm:pt-20 pb-14 sm:pb-56">
+      <div className="w-full pt-14 sm:pt-20 pb-14 sm:pb-56">
         <div className="max-w-7xl px-4 mx-auto">
           <SectionTitle
             title="What Our Customers Say"
