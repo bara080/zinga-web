@@ -1,6 +1,7 @@
-import Image from "next/image";
+import Link from "next/link";
 import ThemeButton from "../form/Button";
 import BenefitCard from "./BenefitCard";
+import Image from "next/image";
 
 const BenefitSection = ({
   title,
@@ -30,9 +31,11 @@ const BenefitSection = ({
           <h2 className="text-2xl sm:text-4xl font-black text-white">
             {title}
           </h2>
-          <ThemeButton variant="primary" className="w-full sm:w-auto">
-            Join us
-          </ThemeButton>
+          <Link href="/join-as-tester">
+            <ThemeButton variant="primary" className="w-full sm:w-auto">
+              Join as a Tester
+            </ThemeButton>
+          </Link>
         </div>
         <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
           {benefits.map((benefit, index) => (

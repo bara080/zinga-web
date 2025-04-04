@@ -11,7 +11,7 @@ interface NavbarProps {
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/features", label: "Features" },
+  { href: "/#features", label: "Features" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -39,9 +39,11 @@ const Navbar: React.FC<NavbarProps> = ({ closeMenu }) => {
           </li>
         ))}
         <li className="h-full flex flex-col items-center justify-center pb-1">
-          <ThemeOutlineButton variant="white" className="w-full sm:w-auto">
-            Join us
-          </ThemeOutlineButton>
+          <Link href="/join-as-tester">
+            <ThemeOutlineButton variant="white" className="w-full sm:w-auto">
+              Join as a Tester
+            </ThemeOutlineButton>
+          </Link>
         </li>
       </ul>
     </nav>

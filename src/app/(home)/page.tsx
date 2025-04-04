@@ -104,7 +104,7 @@ export default function Home() {
             <h1 className="font-extrabold text-4xl sm:text-5xl text-white leading-tight">
               Book Local Services, Anytime, Anywhere with us!
             </h1>
-            <p className="text-xl sm:text-2xl text-white/70">
+            <p className="text-xl sm:text-2xl">
               Browse nearby service providers, compare prices, <br />
               and book your appointment online.
             </p>
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white py-10 md:py-20 w-full">
+      <div className="bg-white py-10 md:py-20 w-full" id="features">
         <div className="max-w-7xl px-4 mx-auto">
           <SectionTitle
             title="Key Features"

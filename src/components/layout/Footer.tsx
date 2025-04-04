@@ -12,13 +12,13 @@ import SocialLinks from "../ui/SocialLinks";
 const footerLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/features", label: "Features" },
-  { href: "/blogs", label: "Blogs" },
+  { href: "/#features", label: "Features" },
+  { href: "/partnership", label: "Partnership" },
 ];
 
 const footerLinks2 = [
   { href: "/contact", label: "Contact us" },
-  { href: "/help", label: "Help" },
+  { href: "/faq", label: "FAQ" },
 ];
 
 const socialLinks = [
